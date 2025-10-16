@@ -8,7 +8,7 @@
 # 2. Change STARTUP_NAME to your company identifier
 #    Example: "blackford", "acme", "johndoe"
 # 3. Update github_org to your GitHub organization
-# 4. Rename this fork to: {yourcompany}-workspace
+# 4. Rename this fork to: {your-company}-workspace (e.g., blackford-workspace)
 # 5. Create projects in the projects/ directory
 #
 # This file is meant to be customized - it's YOUR configuration!
@@ -31,6 +31,41 @@ startup:
     - "[[README.md:line]]"
     - "[[docs/CUSTOMIZATION.md:line]]"
     - "[[projects/*/PROJECT_VARIABLES.yaml:line]]"
+
+# ============================================================
+# USER/CREATOR IDENTITY (For AI Sessions)
+# ============================================================
+# This section helps AI agents understand WHO is working and WHAT the objectives are
+user:
+  # Primary user/creator identity
+  github_username: "github-username"      # ⚠️ CHANGE THIS! Your GitHub username
+  name: "Your Name"                       # Your full name
+  role: "Lead Developer"                  # Your role in the project
+  timezone: "America/New_York"            # Your timezone (for scheduling)
+
+  # Current objectives and context (update as needed)
+  current_focus:
+    - "Building X feature"
+    - "Fixing Y bug"
+    - "Planning Z architecture"
+
+  # Preferences for AI assistance
+  preferences:
+    code_style: "pythonic"                # pythonic | functional | oop | etc
+    verbosity: "concise"                  # concise | detailed | minimal
+    emoji_usage: "minimal"                # none | minimal | normal | enthusiastic
+
+  # Project priorities (helps AI understand what matters)
+  priorities:
+    - "Code quality over speed"
+    - "Security first"
+    - "User experience"
+
+  # Knowledge graph: tracks where user identity is used
+  _used_in:
+    - "[[.git/config:user]]"              # Git configuration
+    - "[[README.md:maintainer]]"          # Documentation
+    - "[[.github/workflows/*.yml:author]]" # CI/CD attribution
 
 # ============================================================
 # FRAMEWORK CONFIGURATION

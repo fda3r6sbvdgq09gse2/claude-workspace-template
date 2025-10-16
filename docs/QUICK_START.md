@@ -243,7 +243,7 @@ cd my-first-project
 cat > README.md <<'EOF'
 # My First Project
 
-This is my first project using the Claude Multi-Agent Development Framework!
+This is my first project using Claude-Dev-Framework!
 
 ## Description
 
