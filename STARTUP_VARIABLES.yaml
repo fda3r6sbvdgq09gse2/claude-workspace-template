@@ -70,11 +70,14 @@ user:
 # ============================================================
 # FRAMEWORK CONFIGURATION
 # ============================================================
+# ⚠️ IMPORTANT: Framework name comes from claude-dev-framework/VARIABLES.yaml
+#    This is the SINGLE SOURCE OF TRUTH for the framework name
+#    Repository: github.com/fda3r6sbvdgq09gse2/claude-dev-framework
+#    See: claude-dev-framework/VARIABLES.yaml:framework.name
 framework:
   # Framework source (DO NOT CHANGE unless switching frameworks)
-  # This refers to: github.com/fda3r6sbvdgq09gse2/claude-dev-framework
-  source: "Claude-Dev-Framework"
-  display_name: "Claude-Dev-Framework"          # The framework repository name
+  source: "Claude-Dev-Framework"              # From VARIABLES.yaml:framework.name
+  display_name: "Claude-Dev-Framework"        # The framework repository name
 
   # Version pinning - upgrade by changing this ref
   version: "1.0.0"
